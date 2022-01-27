@@ -41,7 +41,7 @@ const listFiles = (path) => {
         endDate = new Date();
         totalMinutes = minutes(startDate, endDate);
 
-        if (totalMinutes >= 4) {
+        if (totalMinutes >= 4320) {
           fs.unlink(path + file, (error) => {
             if (error) {
               throw error;
